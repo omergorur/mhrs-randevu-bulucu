@@ -5,7 +5,6 @@ import time
 import datetime
 import json
 import winsound
-from twilio.rest import Client
 
 locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
 GREEN = '\033[32m'
@@ -48,6 +47,7 @@ def send_sms(message_body):
         value = json.load(f)
 
         if value['account_sid'] != '':
+            from twilio.rest import Client
             client = Client(value['account_sid'], value['auth_token'])
 
             message = client.messages.create(
