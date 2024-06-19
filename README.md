@@ -8,10 +8,11 @@ O projeden farkı python dilinde yazılmış olması ve otomatik randevu almak y
 
 ## Gereksinimler
 
-Bilgisayarınızda python 3 kurulu olmalı. Gereksinim olarak requests modülünü kullanacağız.
+Bilgisayarınızda python 3 kurulu olmalı ve aşağıdaki modülleri kurmanız gerekiyor.
 
 ```bash
 pip install requests
+pip install twilio
 ```
 
 Kütüphaneyi kurduktan sonra aşağıdaki komutla çalıştırabilirsiniz:
