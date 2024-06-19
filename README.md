@@ -8,10 +8,16 @@ O projeden farkı python dilinde yazılmış olması ve otomatik randevu almak y
 
 ## Gereksinimler
 
-Bilgisayarınızda python 3 kurulu olmalı. Gereksinim olarak requests modülünü kullanacağız.
+Bilgisayarınızda python 3 kurulu olmalı. requests modülünü kurmanız gerekiyor:
 
 ```bash
 pip install requests
+```
+
+Şayet twilio_config.json dosyasına twilio api bilgilerinizi girip SMS bildirim özelliğini aktif etmek istiyorsanız twilio kütüphanesini de kurmanız gerekir:
+
+```bash
+pip install twilio
 ```
 
 Kütüphaneyi kurduktan sonra aşağıdaki komutla çalıştırabilirsiniz:
