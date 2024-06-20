@@ -190,7 +190,6 @@ def search_appointment(city_id, district_id, branch_id, hospital_id, destination
         'randevuZamaniList': [],
     }
 
-    interval = sleep_time
     while True:
         try:
             response = requests.post(f'{api}/kurum-rss/randevu/slot-sorgulama/arama',
@@ -202,9 +201,9 @@ def search_appointment(city_id, district_id, branch_id, hospital_id, destination
             else:
                 print(f"Uygun randevu bulunamadı - {datetime.datetime.now().strftime("%H:%M:%S")}")
         except requests.RequestException as e:
-            print(f"Bir hata oluştu: {e}. {interval} saniye sonra tekrar denenecek.")
+            print(f"Bir hata oluştu: {e}. {sleep_time} saniye sonra tekrar denenecek.")
 
-        time.sleep(interval)
+        time.sleep(sleep_time)
 
     for slot in slots['data']['hastane']:
         slot_date = datetime.datetime.fromisoformat(slot['baslangicZamani'])
