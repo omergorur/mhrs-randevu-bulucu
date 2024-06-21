@@ -28,6 +28,6 @@ py mhrs.py
 
 Boş bir zamanımda pyqt6 ile gui giydirmesi de yapabilirim belki. Ama konsoldan komut ile de gayet pratik kullanımı.
 
-Ekran görüntüsü için kolay bulunabilecek bir bölümü terchi ettim. Randevu bulunmayan bir bölüm için botun 3 gün aralıksız çalıştığı oldu. 
-![image](https://github.com/omergorur/mhrs-randevu-bulucu/assets/102440553/3c1f4142-8947-40d5-b469-11fbcceb92c5)
+![image](https://github.com/omergorur/mhrs-randevu-bulucu/assets/102440553/d6f0e6f4-927a-45b8-bea3-c26d01c1a0cb)
+
 Anlık iptal durumlarında hatta slot daha uzun süre boş kalsa bile MHRS'nin sistemi size boş slot için hatırlatma yapmıyor. Bu yüzden bu tür botlara yönelmek durumunda kalıyoruz maalesef.
